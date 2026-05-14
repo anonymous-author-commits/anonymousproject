@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cpr"
+version = "1.0.0"
+description = "Climate Planning Regret: decision-theoretic evaluation for generative power-grid models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "networkx>=3.0",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "POT>=0.9",
+    "shapely>=2.0",
+]
+
+[project.optional-dependencies]
+ac-opf = ["pandapower>=2.14"]
+diffusion = ["torch>=2.0"]
+inference = ["osmnx>=2.0", "rasterio>=1.3"]
+dev = ["pytest>=7.0", "ruff>=0.1"]
+
+[tool.setuptools.packages.find]
+include = ["cpr*", "external_baselines*", "generators*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

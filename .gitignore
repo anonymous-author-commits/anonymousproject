@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+
+# Local-only working directory (scratch notes, drafts, scheduling)
+_workspace/
+.claude/
+.aider*
+
+# Reproduction artifacts (regenerable; excluded from the public repo)
+results/*
+!results/README.md
+figures/*
+!figures/README.md
+data/cache_hv_v2/
+data/raw/
+data/raster/
+generators/graph_diffusion/checkpoints/*.pt
+paper/main.pdf
+paper/*.aux
+paper/*.log
+paper/*.out
+
+# Sample / graph caches
+*.graphml
+*.npz
