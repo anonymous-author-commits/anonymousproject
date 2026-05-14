@@ -28,6 +28,15 @@ results/, figures/          Gitignored output dirs populated by the drivers.
 
 Requires Python 3.10+. Tested on Linux, macOS, and Windows 11.
 
+**Conda (recommended):**
+
+```bash
+conda env create -f environment.yml
+conda activate cpr
+```
+
+**Pip:**
+
 ```bash
 pip install -e .
 # Optional extras:
