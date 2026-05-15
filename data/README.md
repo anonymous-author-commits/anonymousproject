@@ -39,8 +39,10 @@ the OSM high-voltage rasterisation used as the supervision target).
 
 ## 3. Trained generator checkpoints
 
-Distributed separately via the Zenodo archive referenced in the manuscript.
-The expected layout once downloaded:
+Trained DiGress and DUPT-family checkpoints are not bundled in this repo
+(`~250 MB` per file). They will be released via a separate, citable
+archive at de-anonymisation; reviewers can request a private link via
+the editor. The expected layout once installed:
 
 ```
 generators/graph_diffusion/checkpoints/
@@ -49,10 +51,10 @@ generators/graph_diffusion/checkpoints/
   final_T_Zurich.pt           # T-Zurich transfer-learning checkpoint
   final_T_Planned.pt          # T-Planned transfer-learning checkpoint
   final_T_Organic.pt          # T-Organic transfer-learning checkpoint
-  final_sweep_A1..D2.pt       # F9 hyperparameter sweep variants
+  final_sweep_A1..D2.pt       # hyperparameter sweep variants
 ```
 
-DUPT generator outputs (the six pixel-native variants) are also archived
-on Zenodo as pre-computed multigraph samples under
+DUPT generator outputs (the six pixel-native variants) are distributed
+as pre-computed multigraph samples under
 `results/graphs_mc/multi_city_hv_*`; re-running the DUPT inference loop
-requires the original DUPT training code, not bundled here.
+requires the original DUPT training code, which is not bundled here.

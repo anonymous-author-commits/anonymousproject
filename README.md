@@ -108,8 +108,7 @@ recipe.
   (contingency analysis, reliability metrics, cross-city tooling).
 - `generators/graph_diffusion/checkpoints/` is empty in this release;
   trained checkpoints are large (~250 MB) and are distributed separately
-  (see `paper/main.tex` §"Code and data availability" for the Zenodo
-  reference).
+  (see [data/README.md](data/README.md) for the expected layout).
 - `_workspace/` (local-only, gitignored) holds the assembly script that
   built this release from the working copy. Not required to use the
   package.
