@@ -4,6 +4,8 @@ Decision-theoretic evaluation framework for generative power-grid models.
 Companion code for the manuscript *Decision-theoretic evaluation reveals
 planning blind spots in generative power-grid models* (under review).
 
+**Manuscript PDF:** [`paper/cpr_nature_energy_submission.pdf`](paper/cpr_nature_energy_submission.pdf)
+
 ## What this repo contains
 
 ```

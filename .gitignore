@@ -41,11 +41,18 @@ results/*
 !results/README.md
 figures/*
 !figures/README.md
+# Manuscript figures that ship with the submission (whitelisted).
+!figures/cpr_vs_dice.pdf
+!figures/percell_ci.pdf
+!figures/cross_payoff.pdf
+!figures/gallery_sao_paulo.pdf
+!figures/bound_per_payoff.pdf
+!figures/ac_dc_morphology.pdf
+!figures/transfer_matrix.pdf
 data/cache_hv_v2/
 data/raw/
 data/raster/
 generators/graph_diffusion/checkpoints/*.pt
-paper/main.pdf
 paper/*.aux
 paper/*.log
 paper/*.out
